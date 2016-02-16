@@ -1,0 +1,26 @@
+{
+  "name": "jobs-finder",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nfmmonteiro/jobs-finder",
+  "authors": [
+    "Nuno Monteiro <nfmmonteiro@gmail.com>"
+  ],
+  "description": "Jobs Finder App",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "AngularJS",
+    "NodeJS",
+    "Codeship",
+    "Heroku"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
