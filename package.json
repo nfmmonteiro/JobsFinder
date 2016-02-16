@@ -1,0 +1,33 @@
+{
+  "name": "jobs-finder",
+  "version": "1.0.0",
+  "description": "Jobs Finder App",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfmmonteiro/jobs-finder.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "MEAN",
+    "NodeJS",
+    "Heroku",
+    "Codeship"
+  ],
+  "author": "Nuno Monteiro <nfmmonteiro@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nfmmonteiro/jobs-finder/issues"
+  },
+  "homepage": "https://github.com/nfmmonteiro/jobs-finder#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7"
+  }
+}
