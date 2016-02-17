@@ -1,4 +1,5 @@
 var express = require('express');
+var config = require('./config')();
 
 var app = express();
 
@@ -13,11 +14,8 @@ app.get('*', function(req, res) {
     res.render('index');
 });
 
-var port =  process.env.PORT || 9090;
-var ip = process.env.IP || '127.0.0.1';
-
-app.listen(port, ip, function() { 
+app.listen(config.port, config.ip, function() { 
     console.log('[backlog]');
 }, function() {
-    console.log('[callback] ', ip, 'listening on', port);
+    console.log('[callback] ', config.ip, 'listening on', config.port);
 });
