@@ -13,4 +13,9 @@ app.get('*', function(req, res) {
     res.render('index');
 });
 
-app.listen(process.env.PORT, process.env.IP);
+var port = process.env.PORT || 8080;
+var ip = process.env.IP || 'localhost';
+
+app.listen(port, ip, function() {
+    console.log(ip, 'listening on port', port);
+});
