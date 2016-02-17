@@ -1,6 +1,19 @@
-html
+doctype html
+html(lang="en")
   head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
     title Jobs Finder App
     link(rel="stylesheet", href="/lib/bootstrap/dist/css/bootstrap.min.css", type="text/css")
-  body
-    div Hello World!
+  
+  body(ng-app="jobsFinder")
+    div.container(ng-controller="JobsCtrl")
+      h1(ng-bind="title")
+      
+      div.list-group
+        a.list-group-item(href="#", ng-repeat="job in jobs")
+          h4.list-group-item-heading(ng-bind="job.title")
+          p.list-group-item-text(ng-bind="job.description")
+      
+  script(src="/lib/angular/angular.min.js")
+  script(src="/app/app.js")
